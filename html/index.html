@@ -15,45 +15,59 @@
 <body>
     <section>
         <header>
-            <div class="container bg-dark">
-                <div class="row">
+            <div class="container">
+                <div class="row align-items-center py-3">
                     <div class="col-5">
-                        <div class="row">
-                            <div class="col 3">HOME</div>
-                            <div class="col 3">ABOUT US</div>
-                            <div class="col 3">MENU LIST</div>
-                            <div class="col 3">TEAM</div>
+                        <div class="row thenav align-items-center justify-content-between">
+                            <div class="col-3 bg-danger">HOME</div>
+                            <div class="col-3">ABOUT US</div>
+                            <div class="col-3">MENU LIST</div>
+                            <div class="col-3">TEAM</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex justify-content-center">
                         <img src="../images/logo.png" alt="TheLogooftheRestuarant">
                     </div>
                     <div class="col-5">
-                        <div class="row">
-                            <div class="col 3">RESERVATION</div>
-                            <div class="col 3">BLOG</div>
-                            <div class="col 3">TESTIMONIALS</div>
-                            <div class="col 3">CONTACT US</div>
+                        <div class="row thenav align-items-center justify-content-between">
+                            <div class="col-3">RESERVATION</div>
+                            <div class="col-3">BLOG</div>
+                            <div class="col-3">TESTIMONIALS</div>
+                            <div class="col-3">CONTACT</div>
                         </div>
                     </div>
-
                 </div>
-                <h1>Whatever your OCCASION,
-                    <br> TASTE makes it one
-                    <br> to remember
-                </h1>
-                <button>PURCHASE THEME</button>
-                <button>LEARN MORE</button>
+                <div class="my-5">
+                    <h1 class="title my-5">Whatever your
+                        <span style="font-size:50px">OCCASION,
+                            <br>
+                            <span style="color: red"> TASTE</span> makes </span> it one
+                        <br> to
+                        <span style="font-size:50px">remember!</span>
+                    </h1>
+                    <div class="d-flex align-items-center justify-content-center my-5">
+                        <p class="bg-light text-dark mx-3 my-5 p-2 button-border">PURCHASE THEME</p>
+                        <p class="bg-danger mx-3 my-5 p-2 button-border">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="backgroundforbottom">
             </div>
         </header>
     </section>
-    <section>
-        <div class="container">
-            <div class="ourstory">
-                <h1>OUR Story</h1>
+    <section class="storyandmenu py-5">
+        <div class="container position-relative bg-light bottom-padding">
+            <img src="../images/box-left-top.png" alt="topleftimage" class="position-absolute">
+            <img src="../images/box-right-top.png" alt="toprightimage" class="position-absolute">
+            <img src="../images/box-bottom_right.png" alt="bottomrightimage" class="position-absolute">
+            <img src="../images/box-bottom-left.png" alt="bottomleftimage" class="position-absolute">
+
+            <div class="ourstory title mb-5">
+                <h1>
+                    <span style="color:red">OUR</span> Story</h1>
                 <img src="../images/decoration_line.png" alt="titledecoration">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic perferendis quasi et blanditiis eum doloribus,
+            <p class="textforcentering">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic perferendis quasi et blanditiis eum doloribus,
                 vel minima velit dolorem unde doloremque ab ducimus suscipit, nihil cupiditate commodi omnis repudiandae!
                 Assumenda quam nulla provident perspiciatis beatae hic a possimus dicta! Ipsum unde perspiciatis quasi assumenda,
                 nobis id repellat ullam dignissimos neque. Provident sunt, recusandae est adipisci similique harum atque
@@ -63,176 +77,179 @@
                 temporibus numquam expedita beatae voluptates, deserunt, quibusdam ipsam, omnis error fugit iusto at? Sit
                 est distinctio incidunt sint.
             </p>
-            <div class="menutitle">
-                <h1>Our Menu List</h1>
+            <div class="menutitle title my-5">
+                <h1>
+                    <span style="color:red">OUR</span> Menu List</h1>
                 <img src="../images/decoration_line.png" alt="titledecoration">
             </div>
             <div class="menu">
-                <div class="row">
+                <div class="row justify-content-center px-3">
                     <div class="col-2">
-                        <div>
-                            <img src="" alt="">
-                            <h4>BreakFast</h4>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <h4>Lunch</h4>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <h4>Snacks</h4>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <h4>Dinner</h4>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-2 border-bottom active-tab">
+                                <i class="fa fa-cutlery font-awesome-icon-size" aria-hidden="true"></i>
+                                <h4>BreakFast</h4>
+                            </div>
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-2 border-bottom">
+                                <i class="fa fa-lemon-o font-awesome-icon-size" aria-hidden="true"></i>
+                                <h4>Lunch</h4>
+                            </div>
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-2 border-bottom">
+                                <i class="fa fa-apple font-awesome-icon-size" aria-hidden="true"></i>
+                                <h4>Snacks</h4>
+                            </div>
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-2 border-bottom">
+                                <i class="fa fa-cutlery font-awesome-icon-size" aria-hidden="true"></i>
+                                <h4>Dinner</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="col-10">
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row border-rows">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
-                                        <button>$25</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-7">
-                                        <h4>Deer Steak with Potatoes</h4>
-                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <button>$25</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-7">
-                                        <h4>Deer Steak with Potatoes</h4>
-                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
-                                    </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row border-rows">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
-                                        <button>$25</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-7">
-                                        <h4>Deer Steak with Potatoes</h4>
-                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <button>$25</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-7">
-                                        <h4>Deer Steak with Potatoes</h4>
-                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
-                                    </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row border-rows">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 border-bottom">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/menu_image_1.jpg" alt="">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
                                     </div>
                                     <div class="col-7">
                                         <h4>Deer Steak with Potatoes</h4>
                                         <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-2 d-flex align-items-center">
+                                        <button>$25</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-rows">
+                            <div class="col-6 border-bottom">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
+                                    </div>
+                                    <div class="col-7">
+                                        <h4>Deer Steak with Potatoes</h4>
+                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-center">
+                                        <button>$25</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 border-bottom">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
+                                    </div>
+                                    <div class="col-7">
+                                        <h4>Deer Steak with Potatoes</h4>
+                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-center">
+                                        <button>$25</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-rows">
+                            <div class="col-6 border-bottom">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
+                                    </div>
+                                    <div class="col-7">
+                                        <h4>Deer Steak with Potatoes</h4>
+                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-center">
+                                        <button>$25</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 border-bottom">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../images/menu_image_1.jpg" alt="Food">
+                                    </div>
+                                    <div class="col-7">
+                                        <h4>Deer Steak with Potatoes</h4>
+                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-center">
                                         <button>$25</button>
                                     </div>
                                 </div>
@@ -242,34 +259,34 @@
                 </div>
             </div>
     </section>
-    <section class="bg-dark">
+    <section class="chefs">
         <div class="container">
-            <div>
+            <div class="title py-5">
                 <h1>Meet our Chefs</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
             <div class="row">
                 <div class="col-3">
-                    <img src="../images/chef1.png" alt="Chef1">
-                    <p>Tom Cruise</p>
+                    <img src="../images/chef1.png" alt="Chef1" class="border-bottom">
+                    <p class="title">Tom Cruise</p>
                 </div>
                 <div class="col-3">
-                    <img src="../images/chef2.png" alt="Chef2">
-                    <p>Tom Daley</p>
+                    <img src="../images/chef2.png" alt="Chef2" class="border-bottom">
+                    <p class="title">Tom Daley</p>
                 </div>
                 <div class="col-3">
-                    <img src="../images/chef3.png" alt="Chef3">
-                    <p>Tom Hanks</p>
+                    <img src="../images/chef3.png" alt="Chef3" class="border-bottom">
+                    <p class="title">Tom Hanks</p>
                 </div>
                 <div class="col-3">
-                    <img src="../images/chef4.png" alt="Chef4">
-                    <p>Tom Brady</p>
+                    <img src="../images/chef4.png" alt="Chef4" class="border-bottom">
+                    <p class="title">Tom Brady</p>
                 </div>
             </div>
     </section>
     <section class="bookandblog">
         <div class="container">
-            <div>
+            <div class="title">
                 <h1>Book your Table</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
@@ -324,7 +341,7 @@
                     <button type="button" class="btn btn-danger">Book Now</button>
                 </div>
             </div>
-            <div>
+            <div class="title">
                 <h1>Our Blog</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
@@ -353,7 +370,7 @@
     </section>
     <section class="testimonials bg-dark">
         <div class="container">
-            <div>
+            <div class="title">
                 <h1>Client Testimonials</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
@@ -387,7 +404,7 @@
     </section>
     <section class="contact">
         <div class="container">
-            <div>
+            <div class="title">
                 <h1>Our Contact</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>

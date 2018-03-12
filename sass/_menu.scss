@@ -1,0 +1,57 @@
+.storyandmenu{
+    background: url("../images/main_bg.jpg");
+
+    .bottom-padding{
+        padding-bottom: 10%;
+    }
+
+    .textforcentering{
+        margin: 0 20%;
+        text-align:center;
+    }
+    
+    .border-rows{
+        border-left:solid #dee2e6 1px;
+        border-right:solid #dee2e6 1px;
+
+    }
+    .active-tab{
+        border-right: red solid 5px;
+            i{
+                color:red;
+            }
+    }
+    
+    .font-awesome-icon-size{
+        font-size: 60px;
+    }
+    
+    
+    img[alt="Food"]{
+        border-radius: 50%;
+        max-width: 100%;
+    }
+    button{
+        color: red;
+    }
+    img[alt="topleftimage"]{
+                top:0;
+                left:0;
+    }
+    img[alt="toprightimage"]{
+        top:0;
+        right:0;
+        
+                
+    }
+    img[alt="bottomrightimage"]{
+        bottom:0;
+        right:0;
+                
+    }
+    img[alt="bottomleftimage"]{
+        bottom:0;
+        left:0;
+    }
+
+}
