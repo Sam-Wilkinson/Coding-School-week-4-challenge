@@ -1,2 +1,15 @@
+/* modules*/
 @import "variables";
-@import "@import "../node_modules/bootstrap/scss/bootstrap"
+@import"structure";
+
+
+
+/*partials*/
+@import "header";
+
+
+
+/*imported*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
