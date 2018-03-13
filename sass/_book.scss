@@ -1,0 +1,35 @@
+.bookandblog{
+    background: url("../images/main_bg.jpg");
+    
+    .querybox{
+        margin: 10% auto;
+        border-radius: 20px;
+        background: url("../images/book_table_bg.jpg");
+        height: 550px;
+        width: 60%;
+    }
+    .databox-container{
+        padding-left:10%;
+        padding-right: 10%;
+        margin-left: -35px;
+    }
+    .form-control{
+        width: initial;
+    }
+    .data-item-border{
+        border-radius: 10px;
+    }
+    .button-border{
+        border-radius: 25px;
+    }
+
+img[alt*="aaaa"]{
+    border: solid 4px grey;
+    border-radius: 15px;
+}
+.infoonpictures{
+    height: 50px;
+    top: -25px;
+}
+
+}

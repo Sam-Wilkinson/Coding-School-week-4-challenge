@@ -8,6 +8,7 @@
     <title>Coding Exercise Week 4</title>
     <script scr="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
@@ -284,23 +285,29 @@
                 </div>
             </div>
     </section>
-    <section class="bookandblog">
-        <div class="container">
+    <section class="bookandblog py-5">
+        <div class="container position-relative bg-light py-5 ">
+            <img src="../images/box-left-top-grey.png" alt="topleftimage" class="position-absolute">
+            <img src="../images/box-right-top-grey.png" alt="toprightimage" class="position-absolute">
+            <img src="../images/box-bottom_right-grey.png" alt="bottomrightimage" class="position-absolute">
+            <img src="../images/box-bottom-left-grey.png" alt="bottomleftimage" class="position-absolute">
             <div class="title">
-                <h1>Book your Table</h1>
+                <h1>
+                    <span style="color:red">Book</span> your Table</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
-            <div>
-                <p>For any Query please call us at :</p>
-                <p>+91 123 456 789 0</p>
-                <div class="container row">
-                    <div class="col-6">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Enter Full Name" aria-label="Search">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Phone Number" aria-label="Search">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Date" aria-label="Search">
-                        <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
+            <div class="d-flex flex-column justify-content-around align-items-center querybox">
+                <p class="text-align-center text-center text-light">For any Query please call us at :
+                    <span style="font-size:20px; font-weight: bold">+91 123 456 789 0 </span>
+                </p>
+                <div class="container row databox-container">
+                    <div class="col-6 pr-0">
+                        <input class="form-control mr-sm-2 m-3 data-item-border" type="search" placeholder="Enter Full Name" aria-label="Search">
+                        <input class="form-control mr-sm-2 m-3 data-item-border" type="search " placeholder="Phone Number" aria-label="Search">
+                        <input class="form-control mr-sm-2 m-3 data-item-border" type="search " placeholder="Date" aria-label="Search">
+                        <div class="dropdown m-3 pr-3">
+                            <button class="btn btn-light dropdown-toggle w-100 data-item-border" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 Occasion
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -311,10 +318,10 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Enter ID" aria-label="Search">
-                        <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
+                        <input class="form-control mr-sm-2 m-3 data-item-border" type="search" placeholder="Enter ID" aria-label="Search">
+                        <div class="dropdown m-3 pr-1">
+                            <button class="btn btn-light dropdown-toggle w-100 data-item-border" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 No of People
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -323,10 +330,10 @@
                                 <a class="dropdown-item" href="#">3</a>
                             </div>
                         </div>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Time" aria-label="Search">
-                        <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
+                        <input class="form-control mr-sm-2 m-3 data-item-border" type="search" placeholder="Time" aria-label="Search">
+                        <div class="dropdown m-3 pr-1">
+                            <button class="btn btn-light dropdown-toggle w-100 data-item-border" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 Cuisine
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -338,25 +345,27 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-danger">Book Now</button>
+                    <button type="button" class="btn btn-danger button-border">Book Now</button>
                 </div>
             </div>
-            <div class="title">
-                <h1>Our Blog</h1>
+            <div class="title mb-5">
+                <h1>
+                    <span style="color:red">Our</span> Blog</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
-            <div class="row">
-                <div class="col-6">
+            <div class="row justify-content-center container p-5">
+                <div class="col-6 d-flex flex-column justify-content-center ">
                     <img src="../images/blog_img1.jpg" alt="Salaaaad">
-                    <button>12 April 2017/ 20 Comments/ 35 Likes</button>
+                    <div class="bg-danger d-flex justify-content-center align-items-center position-relative text-light mx-5 button-border infoonpictures"
+                        stlye="text-weight: bold; text-size:30px">12 April 2017/ 20 Comments/ 35 Likes</div>
                     <h4>Lorem Ipsum</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore deleniti atque porro impedit?
                         Tenetur beatae dignissimos pariatur, ullam provident omnis impedit? Ipsam ex voluptas consequatur
                         voluptate! Hic, suscipit optio!</p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex flex-column justify-content-center">
                     <img src="../images/blog_img2.jpg" alt="Chickaaaan">
-                    <button>12 April 2017/ 20 Comments/ 35 Likes</button>
+                    <div class="bg-danger d-flex justify-content-center align-items-center position-relative text-light mx-5 button-border infoonpictures">12 April 2017/ 20 Comments/ 35 Likes</div>
                     <h4>Lorem Ipsum</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro placeat quisquam reprehenderit necessitatibus
                         pariatur, quasi odio accusantium enim? Doloremque similique, neque nisi sed autem veniam deserunt
@@ -364,137 +373,144 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                <button type="button" class="btn btn-danger">Book Now</button>
+                <button type="button" class="btn btn-danger button-border">Know More</button>
             </div>
         </div>
     </section>
-    <section class="testimonials bg-dark">
+    <section class="testimonials bg-dark pb-5">
         <div class="container">
-            <div class="title">
-                <h1>Client Testimonials</h1>
+            <div class="title py-5">
+                <h1>
+                    <span style="color:red">Client</span> Testimonials</h1>
                 <img src="../images/decoration_line.png" alt="titleDecoration">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../images/testimonial1.jpg" alt="OOOO Grill">
+            <div class="container ">
+                <div class="row justify-content-around">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <img src="../images/testimonial1.jpg" alt="OOOO Grill " class="rounded-circle w-100" style="border: solid 5px; border-color: beige">
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 border border-light text-border">
                         <h4>Lorem Ipsum
-                            <br>Manager
+                            <br>
+                            <span class="text-danger">Manager</span>
                         </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus quidem placeat fuga,
                             sunt nulla quam, libero iste accusamus minus provident culpa? Fugit obcaecati velit numquam molestias
                             molestiae maiores est!</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 border border-light text-border">
                         <h4>Lorem Ipsum
-                            <br>Manager
+                            <br>
+                            <span style="color:red">Manager</span>
                         </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus quidem placeat fuga,
                             sunt nulla quam, libero iste accusamus minus provident culpa? Fugit obcaecati velit numquam molestias
                             molestiae maiores est!</p>
                     </div>
-                    <div class="col-2">
-                        <img src="../images/testimonial1.jpg" alt="OOOO Grill">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <img src="../images/testimonial1.jpg " alt="OOOO Grill" class="rounded-circle w-100" style="border: solid 5px; border-color: beige">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
-        <div class="container">
-            <div class="title">
-                <h1>Our Contact</h1>
-                <img src="../images/decoration_line.png" alt="titleDecoration">
+    <section class="contact ">
+        <div class="container d-flex flex-column justify-content-around align-items-center">
+            <div class="title py-5 ">
+                <h1>
+                    <span class="text-danger">Our</span> Contact</h1>
+                <img src="../images/decoration_line.png " alt="titleDecoration ">
             </div>
-            <div class="bg-danger">
-                <div>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus fugiat, reprehenderit numquam asperiores
+            <div class="bg-danger d-flex justify-content-center align-items-center flex-column text-light w-50 mb-5 py-4 border-for-contact">
+                <div class="bg-danger d-flex justify-content-center align-items-center flex-column px-5">
+                    <i class="fa fa-map-marker " aria-hidden="true" style="font-size: 50px"></i>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus fugiat, reprehenderit numquam asperiores
                         temporibus velit suscipit? Commodi, ea aliquam reprehenderit natus quo aperiam voluptas ratione ab
                         amet ducimus dolorum debitis!</p>
                 </div>
-                <div>
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <p>+91 987 654 321 0</p>
+                <div class="bg-danger d-flex justify-content-center align-items-center flex-column border-top border-bottom border-light w-75 pt-3">
+                    <i class="fa fa-phone" aria-hidden="true" style="font-size: 50px"></i>
+                    <p class="text-center">+91 987 654 321 0</p>
                 </div>
-                <div>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <p>abc@abc.com</p>
+                <div class="bg-danger d-flex justify-content-center align-items-center flex-column pt-2">
+                    <i class="fa fa-envelope " aria-hidden="true " style="font-size: 50px"></i>
+                    <p class="text-center">abc@abc.com</p>
                 </div>
             </div>
         </div>
+
     </section>
-    <section class="bg-dark">
-        <footer class="container">
-            <div class="row">
-                <div class="col-4">
+    <section class="footer position-relative">
+        <div class="backgroundforfooter"></div>
+        <footer class="container py-5 ">
+            <div class="row ">
+                <div class="col-4 d-flex flex-column justify-content-around ">
                     <h4>ABOUT US</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis vero in, quisquam et fuga
                         distinctio dolores facilis quo aperiam itaque mollitia labore officiis magnam sapiente, optio dolore
                         neque omnis?</p>
-                    <div class="d-flex">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <div class="d-flex justify-content-between pr-5 ">
+                        <i class="fa fa-facebook " aria-hidden="true "></i>
+                        <i class="fa fa-google-plus " aria-hidden="true "></i>
+                        <i class="fa fa-pinterest-p " aria-hidden="true "></i>
+                        <i class="fa fa-linkedin " aria-hidden="true "></i>
                     </div>
                 </div>
-                <div class="col-4">
-                    <h4>INSTAGRAM</h4>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img1.jpg" alt="Chickaaan">
+                <div class="col-4 ">
+                    <h4 class="pb-3">INSTAGRAM</h4>
+                    <div class="row ">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img1.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img2.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img2.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img1.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img1.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img2.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img2.jpg " alt="Chickaaan ">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img2.jpg" alt="Chickaaan">
+                    <div class="row ">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img2.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img1.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img1.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img2.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img2.jpg " alt="Chickaaan ">
                         </div>
-                        <div class="col-3">
-                            <img src="../images/instragram_gallery_img1.jpg" alt="Chickaaan">
+                        <div class="col-3 p-1">
+                            <img src="../images/instragram_gallery_img1.jpg " alt="Chickaaan ">
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <h4>POPULAR TAGS</h4>
+                <div class="col-4 ">
+                    <h4 class="mb-4">POPULAR TAGS</h4>
                     <div class="d-flex flex-wrap">
-                        <p class="tags mx-3">Restaurant</p>
-                        <p class="tags mx-3">Responsive Design</p>
-                        <p class="tags mx-3">Hotel</p>
-                        <p class="tags mx-3">Blog Section</p>
-                        <p class="tags mx-3">SEO</p>
-                        <p class="tags mx-3">Cuisine</p>
-                        <p class="tags mx-3">Graphic</p>
-                        <p class="tags mx-3">Food</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders ">Restaurant</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">Responsive Design</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">Hotel</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">Blog Section</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">SEO</p>
+                        <p class="tags mx-1 mr-5 p-1 px-2 bg-danger tag-borders">Cuisine</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">Graphic</p>
+                        <p class="tags mx-1 p-1 px-2 bg-danger tag-borders">Food</p>
                     </div>
                 </div>
             </div>
         </footer>
+        <div class="bottomred bg-danger h-25 w-100 position-absolute"></div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
 </body>
 
 </html>
